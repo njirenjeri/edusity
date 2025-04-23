@@ -28,10 +28,11 @@ const Contact = () => {
         if (data.success) {
         setResult("Form Submitted Successfully");
         event.target.reset();
-        } else {
+    } else {
         console.log("Error", data);
         setResult(data.message);
-        }
+    }
+    // setTimeout(setResult(''), 8000)
     };
 
 
