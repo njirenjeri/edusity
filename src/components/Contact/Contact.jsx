@@ -32,6 +32,9 @@ const Contact = () => {
         console.log("Error", data);
         setResult(data.message);
     }
+    setTimeout(() => {
+        setResult('');
+    }, 6000);
     // setTimeout(setResult(''), 8000)
     };
 
